@@ -1,0 +1,33 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 1200, 800 )
+			"visible": true
+			"defaultCloseOperation": 3
+			"title": "学生宿舍管理-导员界面"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "toolBar1"
+				"font": &Font0 new java.awt.Font( "等线", 0, 16 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"icon": new com.jformdesigner.model.SwingIcon( 2, "FileChooser.listViewIcon" )
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userEdit", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separator1"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 120, 50 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
